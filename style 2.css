@@ -1,0 +1,131 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #07abb1; 
+            color: #000;
+            line-height: 2.5;
+            overflow-x: hidden; 
+        }
+        p {font-size: larger;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2px;
+        }
+        .navbar {
+            background-color: #46dbcc;
+            padding: 8px 1px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #0a0606;
+            font-size: 1.9rem;
+            font-weight: bold;
+        }
+        .menu-toggle {
+            display: none;
+            color: #fff; 
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 50px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: justify;
+        }
+
+        h1, h2{
+            color: #fff;
+            padding: 15px;
+            font-size: x-large;
+        }
+
+        h3 {
+            color: #792065;
+        }
+        img {
+            float: right;
+            margin-left: 50px;
+            padding: 80px;
+        }
+        button {
+            background-color: #FF6347;
+            color: #000;
+            border: none;
+            padding: 13px 75px;
+            font-size: 1.1rem;
+            font-weight: bolder;
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 5px 6px 2px rgba(27, 14, 14, 0.925);
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #a82424;
+            color: #fff;
+        }
+     /* Hamburger menu */
+     @media (max-width: 768px) {
+        .menu {
+            display: none;
+            flex-direction: column;
+            background-color: #40E0D0; 
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        .menu li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        .menu.active {
+            display: flex;
+        }
+    }
+    #home {
+        height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 115vh
+    }
+    
